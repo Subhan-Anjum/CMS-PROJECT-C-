@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{57FE13AD-23B9-440A-836E-127E7E6A6CB8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>signupapp</RootNamespace>
+    <AssemblyName>signupapp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\faculty.cs" />
+    <Compile Include="BL\marks.cs" />
+    <Compile Include="BL\scolarship.cs" />
+    <Compile Include="BL\signupBL.cs" />
+    <Compile Include="BL\student.cs" />
+    <Compile Include="BL\subjects.cs" />
+    <Compile Include="BL\survey.cs" />
+    <Compile Include="BL\username.cs" />
+    <Compile Include="Displayfct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displayfct.Designer.cs">
+      <DependentUpon>Displayfct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayStu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayStu.Designer.cs">
+      <DependentUpon>DisplayStu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DL\facultyDL.cs" />
+    <Compile Include="DL\MarksDL.cs" />
+    <Compile Include="DL\scolarshipDL.cs" />
+    <Compile Include="DL\SignupDL.cs" />
+    <Compile Include="DL\studentDL.cs" />
+    <Compile Include="DL\subjectsDL.cs" />
+    <Compile Include="DL\surveyDL.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmaddfaculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmaddfaculty.Designer.cs">
+      <DependentUpon>frmaddfaculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddStudent.Designer.cs">
+      <DependentUpon>frmAddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmadmin.Designer.cs">
+      <DependentUpon>frmadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChallan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChallan.Designer.cs">
+      <DependentUpon>frmChallan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmclg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmclg.Designer.cs">
+      <DependentUpon>frmclg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdelfct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdelfct.Designer.cs">
+      <DependentUpon>frmdelfct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdelst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdelst.Designer.cs">
+      <DependentUpon>frmdelst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmeditst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmeditst.Designer.cs">
+      <DependentUpon>frmeditst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmnewsts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnewsts.Designer.cs">
+      <DependentUpon>frmnewsts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmregidtersubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmregidtersubjects.Designer.cs">
+      <DependentUpon>frmregidtersubjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsorting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsorting.Designer.cs">
+      <DependentUpon>frmsorting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmstudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstudent.Designer.cs">
+      <DependentUpon>frmstudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsurvey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsurvey.Designer.cs">
+      <DependentUpon>frmsurvey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmupdatationmarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmupdatationmarks.Designer.cs">
+      <DependentUpon>frmupdatationmarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmupdateStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmupdateStudent.Designer.cs">
+      <DependentUpon>frmupdateStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmviewmarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmviewmarks.Designer.cs">
+      <DependentUpon>frmviewmarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmviewsurveys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmviewsurveys.Designer.cs">
+      <DependentUpon>frmviewsurveys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateMarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateMarks.Designer.cs">
+      <DependentUpon>GenerateMarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="scolarshipdata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="scolarshipdata.Designer.cs">
+      <DependentUpon>scolarshipdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signin.Designer.cs">
+      <DependentUpon>signin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentviewForm.Designer.cs">
+      <DependentUpon>studentviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatemarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatemarks.Designer.cs">
+      <DependentUpon>updatemarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewscholarships.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewscholarships.Designer.cs">
+      <DependentUpon>viewscholarships.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Displayfct.resx">
+      <DependentUpon>Displayfct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayStu.resx">
+      <DependentUpon>DisplayStu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmaddfaculty.resx">
+      <DependentUpon>frmaddfaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddStudent.resx">
+      <DependentUpon>frmAddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmadmin.resx">
+      <DependentUpon>frmadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChallan.resx">
+      <DependentUpon>frmChallan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmclg.resx">
+      <DependentUpon>frmclg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdelfct.resx">
+      <DependentUpon>frmdelfct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdelst.resx">
+      <DependentUpon>frmdelst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmeditst.resx">
+      <DependentUpon>frmeditst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnewsts.resx">
+      <DependentUpon>frmnewsts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmregidtersubjects.resx">
+      <DependentUpon>frmregidtersubjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsorting.resx">
+      <DependentUpon>frmsorting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstudent.resx">
+      <DependentUpon>frmstudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsurvey.resx">
+      <DependentUpon>frmsurvey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmupdatationmarks.resx">
+      <DependentUpon>frmupdatationmarks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmupdateStudent.resx">
+      <DependentUpon>frmupdateStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmviewmarks.resx">
+      <DependentUpon>frmviewmarks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmviewsurveys.resx">
+      <DependentUpon>frmviewsurveys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateMarks.resx">
+      <DependentUpon>GenerateMarks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="scolarshipdata.resx">
+      <DependentUpon>scolarshipdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signin.resx">
+      <DependentUpon>signin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentviewForm.resx">
+      <DependentUpon>studentviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatemarks.resx">
+      <DependentUpon>updatemarks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewscholarships.resx">
+      <DependentUpon>viewscholarships.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\DataSources\Displayfct.datasource" />
+    <None Include="Properties\DataSources\DisplayStu.datasource" />
+    <None Include="Properties\DataSources\Form1.datasource" />
+    <None Include="Properties\DataSources\frmaddfaculty.datasource" />
+    <None Include="Properties\DataSources\frmAddStudent.datasource" />
+    <None Include="Properties\DataSources\frmadmin.datasource" />
+    <None Include="Properties\DataSources\frmChallan.datasource" />
+    <None Include="Properties\DataSources\frmclg.datasource" />
+    <None Include="Properties\DataSources\frmdelfct.datasource" />
+    <None Include="Properties\DataSources\frmdelst.datasource" />
+    <None Include="Properties\DataSources\frmeditst.datasource" />
+    <None Include="Properties\DataSources\frmnewsts.datasource" />
+    <None Include="Properties\DataSources\frmregidtersubjects.datasource" />
+    <None Include="Properties\DataSources\frmsorting.datasource" />
+    <None Include="Properties\DataSources\frmstudent.datasource" />
+    <None Include="Properties\DataSources\frmsurvey.datasource" />
+    <None Include="Properties\DataSources\frmupdatationmarks.datasource" />
+    <None Include="Properties\DataSources\frmupdateStudent.datasource" />
+    <None Include="Properties\DataSources\frmviewmarks.datasource" />
+    <None Include="Properties\DataSources\frmviewsurveys.datasource" />
+    <None Include="Properties\DataSources\GenerateMarks.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\scolarshipdata.datasource" />
+    <None Include="Properties\DataSources\signin.datasource" />
+    <None Include="Properties\DataSources\signupapp.BL.faculty.datasource" />
+    <None Include="Properties\DataSources\signupapp.BL.marks.datasource" />
+    <None Include="Properties\DataSources\signupapp.BL.scolarship.datasource" />
+    <None Include="Properties\DataSources\signupapp.BL.signupBL.datasource" />
+    <None Include="Properties\DataSources\signupapp.BL.student.datasource" />
+    <None Include="Properties\DataSources\signupapp.BL.subjects.datasource" />
+    <None Include="Properties\DataSources\signupapp.BL.survey.datasource" />
+    <None Include="Properties\DataSources\signupapp.DL.facultyDL.datasource" />
+    <None Include="Properties\DataSources\signupapp.DL.MarksDL.datasource" />
+    <None Include="Properties\DataSources\signupapp.DL.scolarshipDL.datasource" />
+    <None Include="Properties\DataSources\signupapp.DL.SignupDL.datasource" />
+    <None Include="Properties\DataSources\signupapp.DL.studentDL.datasource" />
+    <None Include="Properties\DataSources\signupapp.DL.subjectsDL.datasource" />
+    <None Include="Properties\DataSources\signupapp.DL.surveyDL.datasource" />
+    <None Include="Properties\DataSources\signupapp.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\signupapp.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\studentviewForm.datasource" />
+    <None Include="Properties\DataSources\updatemarks.datasource" />
+    <None Include="Properties\DataSources\viewscholarships.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

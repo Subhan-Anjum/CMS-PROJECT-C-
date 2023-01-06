@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="signupapp.BL.faculty">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQBAAAAAQAAAQAAAAMAAAASAAAAEQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BL\faculty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="signupapp.BL.marks">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAQAgBAEUIAAAHAEAwAgBAM=</HashCode>
+      <FileName>BL\marks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="signupapp.BL.scolarship">
+    <Position X="4.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAAAAAAAAAAAAAAAgQAAAAFAAAAQQgAAEAIAAA=</HashCode>
+      <FileName>BL\scolarship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="signupapp.BL.signupBL">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAACAAAEAAAAEAAAAAAAAgCAQAQAAAAAAI=</HashCode>
+      <FileName>BL\signupBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="signupapp.BL.student">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQAAABAAAAAAwAAAAMACACQAAAAkEAAAAAAAAAAAQAA=</HashCode>
+      <FileName>BL\student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="signupapp.BL.subjects">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAA+gEAAPoBAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BL\subjects.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="signupapp.BL.survey">
+    <Position X="2.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAACAAgQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BL\survey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="signupapp.BL.username">
+    <Position X="18.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BL\username.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="signupapp.DL.facultyDL" Collapsed="true">
+    <Position X="15.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAACAQAAABAAAAAAABAAAAAAQAAAA=</HashCode>
+      <FileName>DL\facultyDL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="signupapp.DL.MarksDL" Collapsed="true">
+    <Position X="15.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAQAAAAAAAAQACAAAAARAAAAAAABAAAAAAgAAAA=</HashCode>
+      <FileName>DL\MarksDL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="signupapp.DL.scolarshipDL" Collapsed="true">
+    <Position X="18.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAACAAAAAAAAAAAAABAAAAAAgAAAA=</HashCode>
+      <FileName>DL\scolarshipDL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="signupapp.DL.SignupDL" Collapsed="true">
+    <Position X="15.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAACAAAAAAAAAAAAABAAAAAAAAAIA=</HashCode>
+      <FileName>DL\SignupDL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="signupapp.DL.studentDL" Collapsed="true">
+    <Position X="15.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAACAAAAABAAAAAAABAIgAAACAAAA=</HashCode>
+      <FileName>DL\studentDL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="signupapp.DL.subjectsDL" Collapsed="true">
+    <Position X="18.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAABEAAAABAAAAA=</HashCode>
+      <FileName>DL\subjectsDL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="signupapp.DL.surveyDL" Collapsed="true">
+    <Position X="18.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAAAAAAAAAAACAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>DL\surveyDL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="signupapp.BL.CopyOfstudent" Collapsed="true">
+    <Position X="13.75" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EQAAABAAAAAAwAAAAMAAACQAAAAkEAAAAAAAAAAAQAA=</HashCode>
+      <FileName>BL\student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="signupapp.BL.CopyOfsignupBL" Collapsed="true">
+    <Position X="15.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAEAAAAEAAAAAAAAgCAQAQAAAAAAI=</HashCode>
+      <FileName>BL\signupBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="signupapp.BL.CopyOfCopyOfstudent">
+    <Position X="13.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQAAABAAAAAAwAAAAMAAACQAAAAkEAAAAAAAAAAAQAA=</HashCode>
+      <FileName>BL\student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="signupapp.BL.CopyOfsubjects">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAA+gEAAPoBAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BL\subjects.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
